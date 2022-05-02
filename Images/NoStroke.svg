@@ -1,0 +1,172 @@
+<svg width="1340" height="1338" viewBox="0 0 1340 1338" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
+<style>
+
+<!-- "random" means that some shapes draw in the reverse direction thus 
+making it look like the shapes are being drawn randomly
+
+stroke-dasharray and offset control speed 
+
+stroke fades out as the shape fills in
+
+you can uncomment stroke: green/red to see the reverse animation in action
+-->
+
+.outline {
+  fill-opacity: 1;
+  stroke-dasharray: 1900;
+  stroke-dashoffset: 1900;
+  <!-- stroke: red; -->
+  animation: test 5s forwards ease-in-out, fade 5s forwards ease-in-out;
+}
+
+@keyframes test {
+    
+    0% {
+        stroke-dashoffset: 1900;
+    }
+    70% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+
+        stroke-dashoffset: 0;
+        stroke-opacity: 0;
+    }
+}
+
+.random {    
+
+  fill-opacity: 1;
+  stroke-opacity: 1;
+  stroke-dasharray: 1900;
+  stroke-dashoffset: 0;
+  <!-- stroke: green; -->
+  animation: testReverse 5s forwards ease-in-out reverse, fade 5s forwards ease-in-out; 
+
+}
+
+@keyframes fade {
+
+    0% {
+        stroke-opacity: 1;        
+        fill: black;
+    }
+
+    70% {
+        stroke-opacity: 1;
+        fill: black;
+    }
+    100% {
+        stroke-opacity: 0;
+        fill: white;
+    }
+}
+
+@keyframes testReverse {
+    
+    0% {
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+    70% {
+        stroke-dashoffset: 1900;
+        <!-- fill: black; -->        
+    }
+    100% {
+
+        stroke-dashoffset: 1900;
+        fill: black;
+    }
+} 
+
+</style>
+
+
+<mask id="mask0_111_123" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1340" height="1338">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M807.602 1008.4C891.111 1038.35 981.052 1054.67 1074.73 1054.67C1166.21 1054.67 1254.97 1039.44 1339.65 1009.28C1271.88 1112.64 1180.61 1195.36 1074.73 1251.91C984.078 1300.33 882.716 1329.58 776.233 1336.16C760.915 1337.11 745.492 1337.59 729.979 1337.59C327.454 1337.59 0 1010.14 0 607.644C0 593.306 0.410471 579.043 1.22318 564.869C7.43564 456.516 37.152 353.318 86.6968 261.208C142.68 157.128 223.981 67.2047 325.296 0C296.061 83.5776 281.269 171.06 281.269 261.208C281.269 356.251 298.068 447.446 328.852 531.979C409.431 753.25 585.833 928.876 807.602 1008.4Z" fill="black"/>
+</mask>
+<g mask="url(#mask0_111_123)">
+<path class="outline random" d="M16.8915 1091.66L103.47 1414.73L76.4137 1151.18L339.966 1178.24L16.8915 1091.66Z" fill="black"   stroke="white" stroke-width="2"/>
+<path class="outline" d="M125.763 705.061L212.341 1028.13L185.285 764.583L448.837 791.639L125.763 705.061Z" fill="black"   stroke="white" stroke-width="2"/>
+<path class="outline" d="M272.763 854.061L359.341 1177.13L332.285 913.583L595.837 940.639L272.763 854.061Z" fill="black"   stroke="white" stroke-width="2"/>
+<path class="outline" d="M431.763 999.061L518.341 1322.13L491.285 1058.58L754.837 1085.64L431.763 999.061Z" fill="black"   stroke="white" stroke-width="2"/>
+<path class="outline random" d="M645.734 1188.91L749.005 1380.95L696.02 1219.66L888.548 1208.5L645.734 1188.91Z" fill="black"   stroke="white" stroke-width="2"/>
+<path class="outline" d="M904.059 1050.74L901.015 1222.96L912.256 1088.43L961.812 1150.67L904.059 1050.74Z" fill="black"   stroke="white" stroke-width="2"/>
+<path class="outline random" d="M211.763 253.06L298.341 576.135L271.285 312.583L534.837 339.639L211.763 253.06Z" fill="black"   stroke="white" stroke-width="2"/>
+<path class="outline" d="M346.861 1168.28L260.282 845.202L287.339 1108.75L23.7869 1081.7L346.861 1168.28Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M455.732 781.679L369.153 458.605L396.21 722.157L132.658 695.1L455.732 781.679Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M602.732 930.679L516.153 607.605L543.21 871.157L279.658 844.1L602.732 930.679Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M761.732 1075.68L675.153 752.605L702.21 1016.16L438.658 989.1L761.732 1075.68Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M541.732 329.679L455.153 6.60509L482.21 270.157L218.658 243.1L541.732 329.679Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M80.2294 1154.99L108.578 1419.84L140.178 1214.94L345.073 1183.34L80.2294 1154.99Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M189.1 768.399L217.449 1033.24L249.049 828.347L453.945 796.747L189.1 768.399Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M336.1 917.399L364.449 1182.24L396.049 977.347L600.945 945.747L336.1 917.399Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M495.1 1062.4L523.449 1327.24L555.049 1122.35L759.945 1090.75L495.1 1062.4Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M702.243 1223.63L756.32 1385.59L752.889 1254.6L895.864 1213.14L702.243 1223.63Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M756.015 1256.46L758.515 1341.96L779.515 1274.46L896.515 1216.96L756.015 1256.46Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M914.782 1096.85L903.515 1219.96L923.038 1134.81L964.515 1159.91L914.782 1096.85Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M275.1 316.398L303.449 581.242L335.049 376.347L539.945 344.747L275.1 316.398Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M282.757 1102.64L256.707 838.561L223.435 1043.32L18.6791 1076.59L282.757 1102.64Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M391.628 716.043L365.578 451.965L332.306 656.721L127.55 689.992L391.628 716.043Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M538.628 865.043L512.578 600.965L479.306 805.721L274.55 838.992L538.628 865.043Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M697.628 1010.04L671.578 745.965L638.306 950.721L433.55 983.992L697.628 1010.04Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M477.628 264.043L451.578 -0.0353362L418.306 204.721L213.55 237.992L477.628 264.043Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M251.498 11.3803L-73.8742 -75.9646L191.531 -48.5872L164.154 -313.992L251.498 11.3803Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M148.498 487.38L-176.874 400.035L88.5309 427.413L61.1535 162.008L148.498 487.38Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M199.498 1019.38L-125.874 932.035L139.531 959.413L112.154 694.008L199.498 1019.38Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M504.498 1314.38L179.126 1227.04L444.531 1254.41L417.154 989.008L504.498 1314.38Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M790.745 1471.97L453.87 1468.54L717.715 1428.86L625.003 1178.67L790.745 1471.97Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M840.671 1127.83L577.124 1125.88L783.446 1094.26L710.376 898.739L840.671 1127.83Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M981.498 1583.38L656.126 1496.04L921.531 1523.41L894.154 1258.01L981.498 1583.38Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M719.515 1809.96L719.515 1597.54L1141.52 1078.96L719.515 1809.96Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M1333.57 1147.5L1160.57 858.419L1332.2 1062.7L1497.15 852.985L1333.57 1147.5Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M68.8915 83.6571L155.47 406.731L128.414 143.179L391.966 170.236L68.8915 83.6571Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M-34.1085 559.657L52.4702 882.731L25.4137 619.179L288.966 646.236L-34.1085 559.657Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M321.892 1386.66L408.47 1709.73L381.414 1446.18L644.966 1473.24L321.892 1386.66Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M1152.1 1072.4L989.573 1364.73L1153.46 1156.57L1323.98 1359.33L1152.1 1072.4Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M398.861 160.275L312.282 -162.799L339.339 100.753L75.7869 73.6967L398.861 160.275Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M295.861 636.276L209.282 313.202L236.339 576.753L-27.2131 549.697L295.861 636.276Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M651.861 1463.28L565.282 1140.2L592.339 1403.75L328.787 1376.7L651.861 1463.28Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M930.861 1652.28L844.282 1329.2L871.339 1592.75L607.787 1565.7L930.861 1652.28Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M1335.87 1356.98L1498.4 1064.65L1334.51 1272.81L1163.98 1070.04L1335.87 1356.98Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M-79.2372 -64.4718L243.837 22.107L-19.715 -4.94957L7.34147 258.602L-79.2372 -64.4718Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M-182.237 411.528L140.837 498.107L-122.715 471.05L-95.6585 734.602L-182.237 411.528Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M-131.237 943.528L191.837 1030.11L-71.715 1003.05L-44.6585 1266.6L-131.237 943.528Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M173.763 1238.53L496.837 1325.11L233.285 1298.05L260.341 1561.6L173.763 1238.53Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M452.763 1427.53L775.837 1514.11L512.285 1487.05L539.341 1750.6L452.763 1427.53Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M1148.72 862.945L1320.6 1149.88L1150.08 947.112L986.191 1155.28L1148.72 862.945Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M1011.41 815.965L1045.51 892.927L975.845 1148.54L1011.41 815.965Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M866.512 821.965L928.565 878.844L967.05 1140.97L866.512 821.965Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M185.862 -52.7235L-77.4495 -79.54L126.54 -112.045L159.046 -316.035L185.862 -52.7235Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M82.8622 423.276L-180.449 396.46L23.5405 363.955L56.0458 159.965L82.8622 423.276Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M133.862 955.276L-129.449 928.46L74.5405 895.955L107.046 691.965L133.862 955.276Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M438.862 1250.28L175.551 1223.46L379.54 1190.95L412.046 986.965L438.862 1250.28Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M896.63 1198.46L639.515 1135.66L846.038 1131.54L906.31 933.965L896.63 1198.46Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M711.193 1426.26L449.515 1465.97L638.95 1383.61L619.547 1177.96L711.193 1426.26Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M843.766 1123.98L739.515 929.267L834.383 1040.61L902.126 910.965L843.766 1123.98Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M915.862 1519.28L652.551 1492.46L856.54 1459.95L889.046 1255.96L915.862 1519.28Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M716.515 1579.96L716.515 1484.95L716.515 1369.77L1135.52 1065.96L716.515 1579.96Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M1331 1055.79L1160.49 853.363L1329.65 971.906L1494.9 847.965L1331 1055.79Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M132.229 146.995L160.578 411.839L192.178 206.943L397.073 175.344L132.229 146.995Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M29.2294 622.995L57.5782 887.839L89.1778 682.943L294.073 651.344L29.2294 622.995Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M385.229 1449.99L413.578 1714.84L445.178 1509.94L650.073 1478.34L385.229 1449.99Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M1153.55 1161.97L989.689 1371.96L1154.92 1246.73L1324.1 1366.56L1153.55 1161.97Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M334.757 94.639L308.707 -169.439L275.435 35.3173L70.6791 68.5887L334.757 94.639Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M231.757 570.639L205.707 306.561L172.435 511.317L-32.3209 544.589L231.757 570.639Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M587.757 1397.64L561.707 1133.56L528.435 1338.32L323.679 1371.59L587.757 1397.64Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M866.757 1586.64L840.707 1322.56L807.435 1527.32L602.679 1560.59L866.757 1586.64Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M1335.47 1265.23L1500.45 1057.39L1334.11 1181.35L1163.87 1062.82L1335.47 1265.23Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M-15.8993 -1.13388L248.945 27.2149L44.049 58.8145L12.4494 263.71L-15.8993 -1.13388Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M-118.899 474.866L145.945 503.215L-58.951 534.815L-90.5506 739.71L-118.899 474.866Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M-67.8993 1006.87L196.945 1035.21L-7.95095 1066.81L-39.5506 1271.71L-67.8993 1006.87Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M237.101 1301.87L501.945 1330.21L297.049 1361.81L265.449 1566.71L237.101 1301.87Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M1150.17 952.507L1320.72 1157.1L1151.54 1037.28L986.307 1162.5L1150.17 952.507Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M1047.69 897.861L1082.03 975.375L978.771 1155.15L1047.69 897.861Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M932.543 882.49L995.04 939.776L972.375 1145.85L932.543 882.49Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M821.325 913.57L901.34 941.59L961.723 1139.92L821.325 913.57Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline" d="M569.454 1134.32L780.562 1190.34L608.443 1173.08L626.684 1345.1L569.454 1134.32Z" fill="black"  stroke="white" stroke-width="2"/>
+<path class="outline random" d="M804.129 998.634L850.462 1002.04L833.81 1034.38L804.129 998.634Z" fill="black" stroke="white" stroke-width="2"/>
+</g>
+</svg>

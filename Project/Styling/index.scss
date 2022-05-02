@@ -1,0 +1,96 @@
+@import "_mixins";
+@import url(//db.onlinewebfonts.com/c/7547daaa884a413a31e17e61a2c3c3a3?family=Hidayatullah+DEMO);
+
+@font-face {
+  font-family: "Andalus";
+  src: url("//db.onlinewebfonts.com/t/8269ea45efd48785edffb3ed85a5dc8a.eot");
+  src: url("//db.onlinewebfonts.com/t/8269ea45efd48785edffb3ed85a5dc8a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8269ea45efd48785edffb3ed85a5dc8a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8269ea45efd48785edffb3ed85a5dc8a.woff") format("woff"), url("//db.onlinewebfonts.com/t/8269ea45efd48785edffb3ed85a5dc8a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8269ea45efd48785edffb3ed85a5dc8a.svg#Andalus") format("svg");
+}
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  @include flexCenter(center, center);
+}
+
+.main {
+  background: url(../Images/NoStroke.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-color: black;
+
+  @include flexCenter(center, center);
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.container {
+  color: white;
+  position: absolute;
+  text-align: center;
+  left: 850px;
+  top: 250px;
+
+  width: 470px;
+}
+
+.first {
+  font-family: Andalus;
+  font-size: 100px;
+  animation: fade 5s forwards ease-in-out;
+}
+
+.second {
+  font-family: Hidayatullah DEMO;
+  font-size: 70px;
+  animation: fade 5s forwards ease-in-out;
+}
+
+.logo {
+  position: absolute;
+  width: 150px;
+  bottom: -10px;
+
+  animation: fadeUp 6s forwards ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-15px) translateX(15px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}

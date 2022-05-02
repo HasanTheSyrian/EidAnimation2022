@@ -1,0 +1,12 @@
+node_modules
+package-lock.json
+package.json
+public
+_mediaqueries.scss
+_variables.scss
+tailwind.config.js
+.quokka
+.prettierrc
+.prettierignore
+.eslintrc.js
+.vscode
